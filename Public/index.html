@@ -12,7 +12,9 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/glide.core.min.css" rel="stylesheet">
     <link href="css/glide.theme.min.css" rel="stylesheet">
-    <title>Web site_Assignment</title>
+    <link href="css/lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <title>Comfort Cove</title>
 </head>
 <!-- Bootstrap FontAwesome -->
 <script src="https://kit.fontawesome.com/87f6f45306.js" crossorigin="anonymous"></script>
@@ -27,8 +29,8 @@
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <i class="fa-solid fa-border-all"></i>
-            <a class="navbar-brand me-auto display-3" href="#">Grid</a>
+            <i class="fa-brands fa-artstation"></i>
+            <a class="navbar-brand me-auto display-3" href="#">Comfort Cove</a>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
@@ -66,44 +68,66 @@
         </div>
     </div>
 
-    <!-- Affordable Pricing Section -->
-    <div class="containerOne">
+    <!-- IMAGES CAROUSEL WITH GLIDE  -->
+<h1>Categories</h1>
+    <div class="container">
         <div class="glide">
             <div class="glide__track" data-glide-el="track">
-              <ul class="glide__slides">
-                <li class="glide__slide"><img src="assets/img1.png" alt="Sofa"></li>
-                <li class="glide__slide"><img src="assets/img4.png" alt=""></li>
-                <li class="glide__slide"><img src="assets/img2.png" alt="Chairs"></li>
-                <li class="glide__slide"><img src="assets/img3.png" alt="Dinning"></li>
-              </ul>
+                <ul class="glide__slides">
+                    <li class="glide__slide"><img src="assets/img1.png" alt="Sofa"></li>
+                    <li class="glide__slide"><img src="assets/img4.png" alt=""></li>
+                    <li class="glide__slide"><img src="assets/img2.png" alt="Chairs"></li>
+                    <li class="glide__slide"><img src="assets/img3.png" alt="Dinning"></li>
+                </ul>
             </div>
             <div class="glide__arrows" data-glide-el="controls">
                 <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
                 <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
-              </div>
-          </div>
+            </div>
+        </div>
     </div>
-    
+
+<!-- LIGHTBOX  -->
+    <h2>Another section</h2>
+    <div class="containerOne">
+        <a class="example-image-link" href="assets/img4.png" data-lightbox="example-set"
+            data-title="Click the right half of the image to move forward."><img class="light" class="example-image"
+                src="assets/img4.png" alt="" /></a>
+        <a class="example-image-link" href="assets/img4.png" data-lightbox="example-set"
+            data-title="Or press the right arrow on your keyboard."><img class="light" class="example-image"
+                src="assets/img4.png" alt="" /></a>
+        <a class="example-image-link" href="assets/img4.png" data-lightbox="example-set"
+            data-title="The next image in the set is preloaded as you're viewing."><img class="light"
+                class="example-image" src="assets/img4.png" alt="" /></a>
+        <a class="example-image-link" href="assets/img4.png" data-lightbox="example-set"
+            data-title="Click anywhere outside the image or the X to the right to close."><img class="light"
+                class="example-image" src="assets/img4.png" alt="" /></a>
+        <a class="example-image-link" href="assets/img4.png" data-lightbox="example-set"
+            data-title="Click anywhere outside the image or the X to the right to close."><img class="light"
+                class="example-image" src="assets/img4.png" alt="" /></a>
+        <a class="example-image-link" href="assets/img4.png" data-lightbox="example-set"
+            data-title="Click anywhere outside the image or the X to the right to close."><img class="light"
+                class="example-image" src="assets/img4.png" alt="" /></a>
+    </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script>
         const config = {
             type: 'carousel',
             perView: 2,
-            breakpoints:{
-                800:{
+            breakpoints: {
+                800: {
                     perView: 1
                 }
             }
         }
         new Glide('.glide', config).mount()
-      </script>
-
-
+    </script>
 
     <div class="divider py-3 bg-secondary"></div>
 
     <!-- Footer-->
-    <!-- Remove the container if you want to extend the Footer to full width. -->
     <div class="container my-5 d-none d-md-block">
         <footer class="text-center text-lg-start text-dark  mx-lg-3 mx-sm-3">
             <section class="">
@@ -202,7 +226,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-
+    <script src="lightbox-plus-jquery.min.js"></script>
 
 </body>
 

@@ -3,14 +3,21 @@ html, body{
 }
 
 .containerOne{
-    height: 100vh;
-    width: 100%;
+margin: 0 auto;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    padding: 5px;
+}
+h1, h2{
+    text-align: center;
 }
 
+.light{
+width: 80%;
+  height: auto;
+}
 .navContainer{
 background: white;
 margin-left: 10px;
