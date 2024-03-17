@@ -138,21 +138,6 @@
 
     <div class="divider py-3 bg-secondary"></div>
 
-    <!-- MAP Leaflet-->
-
-    <script>
-        const map = L.map('map')
-        map.setView([43.64851, -79.39273], 7);
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        L.marker([43.64842,-79.39271],{
-            title: "Tableau Condonominium",
-        })
-        .addTo(map)
-    </script>
-    
     <!-- Footer-->
     <div class="container my-5 d-none d-md-block">
         <footer class="text-center text-lg-start text-dark  mx-lg-3 mx-sm-3">
@@ -260,6 +245,20 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="lightbox-plus-jquery.min.js"></script>
+
+    <!-- MAP LEAFLET -->
+    <script>
+        const map = L.map('map')
+        map.setView([43.64851, -79.39273], 7);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([43.64842,-79.39271],{
+            title: "Tableau Condonominium",
+        })
+        .addTo(map)
+    </script>
 
 </body>
 
