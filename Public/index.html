@@ -18,6 +18,7 @@
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Comfort Cove</title>
 </head>
 <!-- Bootstrap FontAwesome -->
@@ -64,7 +65,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-aos="fade-left">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="image" src="assets/hero.png" class="d-block w-100" alt="...">
@@ -74,7 +75,7 @@
 
     <!-- IMAGES CAROUSEL WITH GLIDE  -->
     <h1>Categories</h1>
-    <div class="container">
+    <div class="container" data-aos="fade-right">
         <div class="glide">
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
@@ -107,7 +108,7 @@
 
     <!-- LIGHTBOX  -->
     <h2>Another section</h2>
-    <div class="containerOne">
+    <div class="containerOne" data-aos="fade-up">
         <a class="example-image-link" href="assets/img4.png" data-lightbox="example-set"
             data-title="Create a great space"><img class="light" class="example-image" src="assets/img4.png" alt="" />
             <figcaption>Caption 1</figcaption>
@@ -208,13 +209,13 @@
                 </div>
                 <form>
                     <div class="form-group">
-                        <div>
+                        <div data-aos= "zoom-in">
                             <label for="exampleFormControlInput1">Your email address</label>
                             <input type="email" class="form-control" id="exampleFormControlInput1"
                                 placeholder="name@example.com">
                         </div>
 
-                        <div class="form-group">
+                        <div data-aos= "zoom-in" class="form-group">
                             <label for="exampleFormControlTextarea1">How can we help you?</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
@@ -222,18 +223,17 @@
                     <button class="login-button" type="button">Send
                     </button>
                 </form>
+    </div>
 
-                <div id="map">
+    <div id="map">
 
-                </div>
+        </section>
 
-            </section>
+        <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
 
-            <!-- Right -->
-            </section>
-            <!-- Section: Social media -->
-
-            <!-- Section: Links  -->
+        <!-- Section: Links  -->
         </footer>
 
 
@@ -254,10 +254,19 @@
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
-        L.marker([43.64842,-79.39271],{
+        L.marker([43.64842, -79.39271], {
             title: "Tableau Condonominium",
         })
-        .addTo(map)
+            .addTo(map)
+    </script>
+
+    <!--  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 3000,
+            once: true,
+        });
     </script>
 
 </body>
