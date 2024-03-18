@@ -2,6 +2,10 @@ html, body{
     height: 100%;
 }
 
+.logo{
+    font-family: italiana;
+}
+
 .containerOne{
 margin: 0 auto;
     width: 80%;
@@ -11,8 +15,14 @@ margin: 0 auto;
     padding: 10px;
 }
 h1, h2{
-    text-align: center;
+    text-align: center;  
+    font-family: italiana;    
 }
+.italiana-regular {
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 figcaption{
     width: 80%;
